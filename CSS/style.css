@@ -1,0 +1,128 @@
+body {
+    background-color: #152134;
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+  }
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-top: 0;
+    padding: 15px;
+    color: #43597d;
+  }
+  @media (max-width: 700px) {
+    h1 {
+      font-size: 22px;
+    }
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
+    gap: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  @media (max-width: 700px) {
+    .wrapper {
+      grid-template-columns: minmax(300px, 1fr);
+    }
+  }
+  .planner {
+    background-color: white;
+    margin-top: 70px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgb(0 0 0 /12%);
+    padding: 20px;
+    transition: all 0.3s ease-in-out; 
+  }
+  .planner:hover {
+    transform: scale(1.02); 
+  }
+  .planner h3 {
+    margin-top: 0;
+    color: #a0c0d6;
+  }
+  .planner .form {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .planner .form input {
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #eee;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+  }
+  .planner .form input::placeholder {
+    font-size: 15px;
+  }
+  .planner .form input:focus {
+    background-color: #ddd; 
+  }
+  .add {
+    background-color: #7b8ca6;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .add:hover {
+    background-color: #43597d; 
+  }
+  .add span {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .events {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  .events .event {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out; 
+  }
+  .events .event:hover {
+    transform: translateY(-5px); 
+  }
+  .events .event h3 {
+    margin-top: 0;
+    color: #a0c0d6;
+  }
+  .event p {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+  }
+  .event p:not(:last-of-type) {
+    border-bottom: 1px solid #eee;
+  }
+  .event button {
+    padding: 8px 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #7b8ca6;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    width: 100%;
+    outline: none;
+    transition: background-color 0.3s ease-in-out; 
+  }
+  .event button:hover {
+    background-color: #43597d;
+  }
+  
